@@ -58,6 +58,12 @@ printf("informe o nome: ");
 gets(nome2);
 printf("nome: %s", nome2);
 OBS: o gets n esta funcionando, n sei se é o compilador(vscode), mas o codigo eu copiei direto do livro.
+
+##  Passagem de string como parametro para função
+Pode ser representada de duas formas distintas, mas equivalentes:
+    int funcaoexemplo(char s[]) ou int funcaoexemplo(char *s);
+                                forma habitualmente ultilizada
+
 */
     return 0;
 }
