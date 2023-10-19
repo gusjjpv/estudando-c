@@ -1,4 +1,7 @@
 #include <stdio.h>
+
+//principais funções de manipulação de string
+
 //Devolva o numero de caracteres existentes na string(sem contar o '\0')
 int strlen(char *s){
     int i=0;
