@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//principais funções de manipulação de string
+//PRINCIPAIS FUNÇÕES DE MANIPULAÇÃO DE STRINGS!!
 
 //Devolva o numero de caracteres existentes na string(sem contar o '\0')
 int strlen(char *s){
@@ -16,6 +16,11 @@ int isnull(char s[]){
     return(s[0] == '\0');
 }
 
+//Função que copia a string original para outra string
+
+char strcry(char dest[], char orig[]){
+    
+}
 
 int main(){
     
