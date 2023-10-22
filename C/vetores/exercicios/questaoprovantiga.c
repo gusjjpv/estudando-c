@@ -6,9 +6,10 @@ b) retorne quantos numeros armazenados no vetor são menores que o valor de refe
 c) retorne quantas vezes o valor referencia aparece no vetor.
 */
 
-int main(){
+int main()
+{
     int v[5];
-    int i, numRef,qtdRef = 0;
+    int i, numRef, qtdRef = 0;
 
     printf("informe um valor referencia: \n");
     scanf("%d", &numRef);
@@ -16,24 +17,23 @@ int main(){
     v[0] = numRef;
     printf("numero de referencia foi %d\n", numRef);
     printf("Informe os valores do vetor: \n");
-    for(i = 1; i<5; i++){
+    for (i = 1; i < 5; i++)
+    {
         scanf("%d", &v[i]);
     }
 
-    for(i=1;i<5;i++){
-        if(v[i]> numRef){
+    for (i = 1; i < 5; i++)
+    {
+        if (v[i] > numRef)
+        {
             printf("%d é maior que %d\n", v[i], numRef);
         }
-    }
-    
-    for(i=1;i<5;i++){
-        if(v[i]<numRef){
+        if (v[i] < numRef)
+        {
             printf("%d é menor que %d\n", v[i], numRef);
         }
-    }
-    
-    for(i=1;i<5;i++){
-        if(v[i] == v[0]){
+        if (v[i] == v[0])
+        {
             qtdRef++;
         }
     }
