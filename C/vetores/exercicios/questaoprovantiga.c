@@ -8,35 +8,41 @@ c) retorne quantas vezes o valor referencia aparece no vetor.
 
 int main()
 {
-    int v[5];
-    int i, numRef, qtdRef = 0;
+    int v[25];
+    int i, numRef, qtdRef = 0, qtdMenor = 0;
 
-    printf("informe um valor referencia: \n");
-    scanf("%d", &numRef);
-
-    v[0] = numRef;
-    printf("numero de referencia foi %d\n", numRef);
-    printf("Informe os valores do vetor: \n");
-    for (i = 1; i < 5; i++)
+    printf("Informe os valores inteiros: \n");
+    for (i = 0; i < 25; i++)
     {
         scanf("%d", &v[i]);
     }
-
-    for (i = 1; i < 5; i++)
+    printf("informe um valor referencia: \n");
+    scanf("%d", &numRef);
+    printf("numero de referencia foi %d\n", numRef);
+    printf("Numeros maiores que %d:\n", numRef);
+    for (i = 0; i < 25; i++)
     {
         if (v[i] > numRef)
         {
-            printf("%d é maior que %d\n", v[i], numRef);
+            printf("%d\n", v[i]);
         }
+    }
+    printf("Quantidade de numeros menores que %d:\n", numRef);
+    for (i = 0; i < 25; i++)
+    {
         if (v[i] < numRef)
         {
-            printf("%d é menor que %d\n", v[i], numRef);
+            qtdMenor++;
         }
-        if (v[i] == v[0])
+    }
+    printf("%d\n", qtdMenor);
+    for (i = 0; i < 25; i++)
+    {
+        if (v[i] == numRef)
         {
             qtdRef++;
         }
     }
-    printf("a quantidades de vezes que o %d se repetiu foi %d", numRef, qtdRef);
+    printf("a quantidades de vezes que o %d se repetiu foi %d vezes\n", numRef, qtdRef);
     return 0;
 }
